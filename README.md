@@ -5,9 +5,10 @@ The objective is to pivot the data based on different columns representing month
 
 The final result is a unified view of these metrics for each combination of Pole, CODE_NT, act, and month-year.
 
- #  Summary:
+ # Summary:
 
-    Pivoting and Unpivoting: The query begins by applying the UNPIVOT operation on the original data, where quantities and values for each month are transformed from columns to rows. This dynamic reshaping of the data allows for easier analysis and aggregation.
+Pivoting and Unpivoting: The query begins by applying the UNPIVOT operation on the original data, where quantities and values for each month are transformed from columns to rows. 
+This dynamic reshaping of the data allows for easier analysis and aggregation.
 Common Table Expressions (CTEs):
 
 Quantities (cte): The first CTE (cte) focuses on quantities (Q_propre). It aggregates the monthly quantities for each combination of Pole, Code_NT, act, ANNEE, and CLE_PR. The result includes a new column MonthYear, formed by concatenating ANNEE and MONT.
